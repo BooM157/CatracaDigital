@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <ion-modal-view>
+        <ion-header-bar>
+            <h1 class="title">Configurações</h1>
+            <button class="button icon icon-left ion-ios-close-outline" ng-click="closeModal()">Cancelar</button>            
+        </ion-header-bar>
+        
+        <ion-content>
+            <div class="row">
+                <div class="col">
+                    <p>Valor da meia</p>
+                </div>
+                <div class="col">
+                    <span class="item-input"></span>
+                    <input ng-model="valorMeia" type="text" placeholder="Escreva aqui">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <p>Valor da Inteira</p>
+                </div>
+                <div class="col">
+                    <span class="item-input"></span>
+                    <input ng-model="valorInteira" type="text" placeholder="Escreva aqui">
+                </div>
+            </div>
+            
+            <button ng-click = "Salvar(valorMeia,valorInteira)"class="button button-full button-dark">Salvar</button>
+            
+        </ion-content>
+    </ion-modal-view>
+</html>
